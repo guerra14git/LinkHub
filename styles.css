@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+/*
+HEX COLORS: 
+    BODY BKF: #6F4E37 / 111, 78, 55 (coffee brown)
+    SEC COLOR #92684A / 146, 104, 74 (light brown)
+*/
+
+:root {
+    --body-bg-color: #6F4E37;
+    --sec-color: #92684A;
+}
+
+body {
+    background-color: var(--body-bg-color);
+}
+
+/* -- Top Heading -- */
+
+.section-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* keep icons at the edges and title centered via flex */
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.title-welcome {
+    color: var(--sec-color);
+    text-align: center;
+    font-family: 'Fira Code', monospace;
+    font-size: clamp(1rem, 4vw, 1.1rem);
+    flex: 1; /* allow title to take available space between buttons */
+    margin: 0 12px;
+    min-width: 0; /* allow flex item to shrink properly */
+    white-space: nowrap; /* keep it on one line */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease;
+    border: none;
+    border: 1px solid transparent;
+    background-color: transparent;
+    outline: none;
+}
+
+.btn-icon:hover {
+    transform: scale(1.05);
+}
+
+.btn-icon:active {
+    transform: scale(0.95);
+}
+
+.btn-icon img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.5); 
+}
+
+#btn-bright {
+    margin-right: 20px;
+}
+
+.section-middle {
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.avatar-container img {
+    width: clamp(120px, 25vw, 280px);
+    height: clamp(120px, 25vw, 280px);
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 10px;
+}
+
+#name {
+    font-family: 'Fira Code', monospace;
+    font-size: clamp(1.5rem, 5vw, 1.5rem);
+    color: var(--sec-color);
+    margin: 5px;
+}
+
+.main-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 20px; 
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+
+.main-buttons button {
+    width: 100%;
+    padding: 12px 16px;
+    min-height: 48px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background-color: var(--sec-color); 
+    color: var(--body-bg-color);
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, opacity 0.15s ease;
+    outline: none;
+}
+
+.main-buttons button:hover {
+    transform: scale(1.05);
+    opacity: 0.95;
+}
+
+.main-buttons button:active {
+    transform: scale(0.95); 
+}
