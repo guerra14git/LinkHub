@@ -2,21 +2,20 @@
 
 Simple single-file personal link hub and small projects organizer.
 
-This repository is a minimal, static site you can open locally in a browser to keep your important links and a short projects list. Projects are stored in your browser's localStorage, so nothing is uploaded to a server.
+This repository is a minimal, static site you can open locally in a browser to keep your important links and a short projects list. Nothing is uploaded to a server.
 
 ## Features
 
 - Header with quick icons and a short title.
 - Avatar + name area.
-- Main buttons area for links (Projects, Github, LinkedIn, About).
+- Main buttons area for links.
 - Projects section where you can add project title, optional URL and short description.
-- Projects are persisted locally using localStorage.
 
 ## Files
 
-- `index.html` — main page (single page app style).
+- `index.html` — main page.
 - `styles.css` — styling and responsive rules.
-- `scripts.js` — small client-side logic to add/list/remove projects (uses localStorage).
+- `scripts.js` — small client-side logic to add/list/remove projects.
 - `icons/` and `img/` — image assets used by the page.
 
 ## Use
