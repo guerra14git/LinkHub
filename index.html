@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1 class="section-top">
-        <button class="btn-icon" id="btn-bright">
+        <button class="btn-icon" id="btn-theme-toggle">
             <img src="./icons/bright_icon.png" alt="bright_icon">
         </button>
     <p class="title-welcome">Link Hub</p>
@@ -19,17 +19,17 @@
     </h1>
     <main class="section-middle">
         <div class="avatar-container">
-            <img src="./icons/cam_icon.png" alt="Avatar">
+            <img src="./img/myImg.jpeg" alt="Avatar">
         </div>
         <p id="name">Ricardo Guerra</p>
-        <p id="name-desc">... description ...</p>
+        <p id="name-desc" data-long="description">... description ...</p>
         <div class="main-buttons">
-            <button>Bio</button>
-            <button>Download CV</button>
-            <button>Contact Me</button>
+            <button data-long="bio-btn">Bio</button>
+            <button data-long="CV">Download CV</button>
+            <button data-long="contact-btn">Contact Me</button>
         </div>
         <div class="section-projects">
-            <h2 class="separator-projects">Projects</h2>
+            <h2 class="separator-projects" data-long="projects">Projects</h2>
 
                 <!--project cards-->
                 <div class="projects-grid">
@@ -109,7 +109,7 @@
         </div>
     </main>
     <div class="section-contacts">
-        <h3>Contact Me</h3>
+        <h3 data-long="contact">Contact Me</h3>
         <div class="bmc-container">
             <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="guerra14" data-color="#92684a" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#483324" data-font-color="#483324" data-coffee-color="#3d2b1e" ></script>
         </div>
@@ -128,4 +128,5 @@
             </button>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>

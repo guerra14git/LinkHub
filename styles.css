@@ -7,14 +7,21 @@ HEX COLORS:
 */
 
 :root {
-    --body-bg-color: #6F4E37;
+    --body-bg-color: #2f2319;
     --sec-color: #92684A;
-    --contacts-bg-color: #3d2b1e;
+    --contacts-bg-color: #1c150e;
+}
+
+body.light-mode {
+    --body-bg-color: #e9d7c5;
+    --sec-color: #92684A;
+    --contacts-bg-color: #dab89e;
 }
 
 body {
     background-color: var(--body-bg-color);
     margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* -- Top Heading -- */
@@ -22,7 +29,7 @@ body {
 .section-top {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* keep icons at the edges and title centered via flex */
+    justify-content: space-between;
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
@@ -35,10 +42,10 @@ body {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: clamp(1rem, 2.5vw, 2rem);
-    flex: 1; /* allow title to take available space between buttons */
+    flex: 1; 
     margin: 0 12px;
-    min-width: 0; /* allow flex item to shrink properly */
-    white-space: nowrap; /* keep it on one line */
+    min-width: 0; 
+    white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -99,6 +106,7 @@ body {
     border-radius: 50%;
     border: 2px solid var(--sec-color);
     margin-bottom: 15px;
+    object-fit: cover;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
@@ -193,6 +201,7 @@ body {
 .project-card {
     position: relative;
     aspect-ratio: 16 / 9;
+    border: 2px solid var(--sec-color);
     max-width: 700px;
     border-radius: 12px;
     overflow: hidden;
